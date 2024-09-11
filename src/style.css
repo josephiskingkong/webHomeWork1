@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -72,7 +72,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding: 200px 200px ;
+    padding: 200px 300px ;
 }
 
 .hero_title {
@@ -123,4 +123,146 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+.featured_destination_container {
+    padding: 100px 300px;
+}
+
+.featured_img_container {
+    margin-right: 40px;
+}
+
+.featured_destination_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.featured_content {
+    display: flex;
+    padding: 24px 0px;
+    flex-direction: column;
+}
+
+.featured_category {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.featured_texts {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    width: 500px;
+    margin-bottom: 24px;
+}
+
+.featured_title {
+    font-family: "Changa One";
+    font-size: 36px;
+    color: var(--main-text-color)
+}
+
+.featured_description {
+    color: var(--main-text-color);
+    line-height: 33px;
+    font-size: 18px;
+}
+
+.featured_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: var(--secondary-text-color);
+    font-weight: 300;
+}
+
+.featured_play_button_icon > img {
+    filter: brightness(0) saturate(100%) invert(100%);
+    width: 16px;
+    height: 16px;
+}
+
+.featured_play_button_icon {
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-text-color);
+    border-radius: 50%;
+}
+
+.discover_container {
+    padding: 50px 300px;
+}
+
+.discover_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.discover_texts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+.discover_category {
+    color: var(--secondary-text-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.discover_title {
+    color: var(--main-text-color);
+    font-size: 36px;
+    font-family: "Changa One";
+}
+
+.locations_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.location_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.location_card_title {
+    color: var(--main-text-color);
+    font-family: "Changa One";
+    font-size: 24px;
+}
+
+.location_card_img_container>img {
+    width: 240px;
+}
+
+.location_card_button {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.share_container {
+    background: url(img/share_background.png);
+    display: flex;
+    justify-content: center;
+    padding: 0px 100px;
+}
+
+.share_wrapper {
+    background-color: #fff;
+    border-radius: ;
 }
