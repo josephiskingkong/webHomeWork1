@@ -44,8 +44,83 @@
 }
 
 .nav_menu_button {
-    height: 18px;
     outline: none;
     border: none;
     background: none;
+}
+
+.nav_menu_button>img {
+    width: 18px;
+    height: 18px;
+}
+
+.hero_container {
+    background: url(img/background.png) no-repeat;
+    background-size:cover;
+    width: 100%;
+}
+
+.hero_content_wrapper {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 78%);
+}
+
+.hero_content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 200px 200px ;
+}
+
+.hero_title {
+    font-size: 56px;
+    font-family: "Changa One", sans-serif;
+}
+
+.hero_texts {
+    width: 396px;
+    display: flex;
+    gap: 10px;
+    font-weight: 400;
+    flex-direction: column;
+    color: var(--main-text-color);
+    margin-bottom: 25px;
+}
+
+.hero_main_button {
+    font-size: 12px;
+    background: var(--secondary-text-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 3px;
+}
+
+.hero_play_button_icon {
+    height: 15px;
+    align-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #8953ff12;
+}
+
+.hero_play_button_icon>img {
+    height: 15px;
+    width: 15px;
+}
+
+.hero_play_button {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--main-text-color);
+    font-size: 12px;
+}
+
+.hero_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
