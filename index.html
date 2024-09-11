@@ -7,7 +7,9 @@
     <title>Talking Travel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
 </head>
@@ -38,10 +40,12 @@
             <div class="hero_content">
                 <div class="hero_texts">
                     <span class="hero_title">
-                        <span class="hero_title" style="color: var(--secondary-text-color);">Let’s talk</span> about your
+                        <span class="hero_title" style="color: var(--secondary-text-color);">Let’s talk</span> about
+                        your
                         next trip!
                     </span>
-                    <div class="hero_description">Share your favorite travel destination and we will feature it in our next blog!</div>
+                    <div class="hero_description">Share your favorite travel destination and we will feature it in our
+                        next blog!</div>
                 </div>
                 <div class="hero_buttons">
                     <div class="hero_main_button">Share your story</div>
@@ -64,7 +68,8 @@
                 <div class="featured_texts">
                     <span class="featured_category">FEATURED DESTINATION</span>
                     <span class="featured_title">Our swiss adventure blog</span>
-                    <span class="featured_description">Visiting the swiss alps? Want to know the requirements on travelling to Switzerland during the pandemic? Our blog might help! </span>
+                    <span class="featured_description">Visiting the swiss alps? Want to know the requirements on
+                        travelling to Switzerland during the pandemic? Our blog might help! </span>
                 </div>
                 <div class="featured_button">
                     <div class="featured_play_button_icon">
@@ -119,9 +124,117 @@
     </section>
     <section class="share_container">
         <div class="share_wrapper">
-            <div class="share_content"></div>
+            <div class="discover_texts">
+                <span class="discover_category">LET'S BUILD A COMMUNITY</span>
+                <span class="discover_title">Join our next destination</span>
+            </div>
+            <div class="share_content_wrapper">
+                <div class="share_content">
+                    <div class="share_texts">
+                        <span class="share_content_title">Share your travels</span>
+                        <span class="share_content_description">Suggest a new travel destination that you want to see
+                            and we will feature it in our blog.</span>
+                    </div>
+                    <div class="share_inputs">
+                        <input type="text" class="share_input" placeholder="Destination name">
+                        <div class="dropdown-container">
+                            <input list="countries" class="share_input" placeholder="Country of Destination">
+                            <datalist id="countries">
+                                <option value="Austria">
+                                <option value="Russia">
+                                <option value="United Kingdom">
+                                <option value="United States">
+                            </datalist>
+                        </div>
+                        <input type="text" class="share_input" placeholder="Your name">
+                        <div class="dropdown-container">
+                            <input list="categories" class="share_input" placeholder="Shooting category">
+                            <datalist id="categories">
+                                <option value="Rifle Shooting">
+                                <option value="Pistol Shooting">
+                                <option value="Moving Target Shooting">
+                                <option value="Long-Range Shooting">
+                            </datalist>
+                        </div>
+                        <textarea type="text" class="share_input"
+                            placeholder="Describe what kind of photos you want to focus on"
+                            style="height: 102px; vertical-align: top; padding-top: 15px; resize: none;"></textarea>
+                    </div>
+                    <button class="share_submit">Submit</button>
+                </div>
+            </div>
         </div>
     </section>
+    <section class="recent_container">
+        <div class="recent_wrapper">
+            <div class="discover_texts">
+                <span class="discover_category">CATCH UP TO OUR POSTS</span>
+                <span class="discover_title">Recent story entries</span>
+            </div>
+            <div class="recent_content">
+                <div class="recent_main_grid">
+                    <div class="recent_hero_content">
+                        <div class="recent_main_card">
+                            <img src="src/img/Big Story Image.png" alt="">
+                            <div class="recent_main_card_content">
+                                <div class="recent_main_card_texts">
+                                    <span class="recent_main_card_title">Zermatt, Switzerland</span>
+                                    <span class="recent_main_card_description">Marvel on the beauty of the iconic Matterhorn. Find the best places to stay that has the best views of this peak...</span>
+                                </div>
+                                <div class="recent_play_button_icon">
+                                    <img src="src/img/play.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent_content_grid">
+                        <div class="recent_story_card">
+                            <div class="recent_story_card_content">
+                                <img src="src/img/Story Image.png" alt="" class="recent_story_card_img">
+                                <div class="recent_story_card_texts">
+                                    <span class="recent_story_card_title">Tuscany, Italy</span>
+                                    <span class="recent_story_card_description">The amazing Tuscany is home to famous Renaissance art and architecture and a vast scenic landscape. <a style="color: var(--secondary-text-color)">view full blog...</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent_story_card">
+                            <div class="recent_story_card_content">
+                                <img src="src/img/Story Image-2.png" alt="" class="recent_story_card_img">
+                                <div class="recent_story_card_texts">
+                                    <span class="recent_story_card_title">Kyoto, Japan</span>
+                                    <span class="recent_story_card_description">Kyoto is well known for its temples, gardens, Shinto shrines and wooden houses. It’s time to visit tokyo. <a style="color: var(--secondary-text-color)">view full blog...</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent_story_card">
+                            <div class="recent_story_card_content">
+                                <img src="src/img/Story Image-3.png" alt="" class="recent_story_card_img">
+                                <div class="recent_story_card_texts">
+                                    <span class="recent_story_card_title">Lofoten Islands, Norway</span>
+                                    <span class="recent_story_card_description">Featuring razor-sharp peaks housing the arctic landscape. This astonishing island is perfect for your next postcard. <a style="color: var(--secondary-text-color)">view full blog...</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_section">
+            <div class="rights_reserved">
+                <span>© 2022, Talking Travel. All Rights Reserved.</span>
+            </div>
+            <div class="list_container">
+                <ul class="footer_links">
+                    <li class="footer_link">Home</li>
+                    <li class="footer_link">Story</li>
+                    <li class="footer_link">Gallery</li>
+                    <li class="footer_link">Contact us</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
