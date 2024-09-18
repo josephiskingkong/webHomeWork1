@@ -8,12 +8,14 @@
     --main-text-color: #495367;
     --secondary-text-color: #8A53FF;
     --description-text-color: #576074;
+    --paragraph-text-color: #434343;
 }
 
 .nav_section {
     height: 70px;
     padding-inline: 90px;
     align-content: center;
+    box-shadow: 0px 4px 16px 0px #0000000A;
 }
 
 .nav_elements, .nav_links {
@@ -508,4 +510,225 @@ input::-webkit-calendar-picker-indicator {
     font-weight: 300;
     color: #939EB4;
     font-size: 14px;
+}
+
+.main_content_grid {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1fr;
+    padding-top: 46px;
+}
+
+.article_hero_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article_hero_header_texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.article_hero_header_author {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.article_hero_header_author_texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.article_hero_header_category {
+    font-size: 18px;
+    color: var(--secondary-text-color);
+    font-weight: 700;
+}
+
+.article_hero_header_title {
+    font-size: 50px;
+    color: var(--paragraph-text-color);
+    font-family: "Changa One";
+}
+
+.article_hero_header_author_name {
+    font-size: 16px;
+    color: var(--main-text-color);
+    font-weight: 400;
+}
+
+.article_hero_header_author_status {
+    font-size: 14px;
+    color: #A2A7B1;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.article_hero_section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article_hero_video_background {
+    position: relative;
+    width: 100%;
+}
+
+.article_hero_video_button {
+    position: absolute;
+    z-index: 10;
+}
+
+.article_hero_video_title {
+    position: absolute;
+    z-index: 9;
+    padding-bottom: 145px;
+    width: 33%;
+}
+
+.article_hero_video_container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--paragraph-text-color);
+}
+
+.paragraph_title {
+    font-size: 32px;
+    font-family: "Changa One";
+}
+
+.paragraph_description {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.blog_article_page {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.callout_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.callout_img_grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.callout_second_img_grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+}
+
+.callout_main_img>img, .callout_second_img_grid>img {
+    width: 100%;
+}
+
+.callout_content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 34px;
+    gap: 30px;
+    padding-top: 36px;
+}
+
+.callout_title_container {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    align-items: flex-start;
+}
+
+.callout_title {
+    font-size: 42px;
+    line-height: 47px;
+    font-style: italic;
+    color: var(--paragraph-text-color);
+    font-family: "Changa One";
+}
+
+.callout_text {
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paragraph-text-color);
+}
+
+.callout_button {
+    background-color: var(--secondary-text-color);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    height: 46px;
+    width: 165px;
+}
+
+.hightlights_section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hightlights_grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hightlights_card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hightlights_card>img {
+    width: 100%;
+}
+
+.hightlights_card_description {
+    font-size: 14px;
+    font-style: italic;
+    color: #828181;
+}
+
+.hightlights_title {
+    font-size: 32px;
+    font-family: "Changa One";
+    color: var(--paragraph-text-color);
+}
+
+.disclaimer_section {
+    padding: 19px 26px;
+    background-color: #FAFAFA;
+}
+
+.disclaimer_title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--paragraph-text-color);
+    line-height: 26px;
+}
+
+.disclaimer_description {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paragraph-text-color);
+    line-height: 26px;
 }
