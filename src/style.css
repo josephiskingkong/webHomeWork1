@@ -16,6 +16,10 @@
     padding-inline: 90px;
     align-content: center;
     box-shadow: 0px 4px 16px 0px #0000000A;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
 }
 
 .nav_elements, .nav_links {
@@ -261,6 +265,7 @@
 .share_container {
     background: url(img/share_background.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -731,4 +736,13 @@ input::-webkit-calendar-picker-indicator {
     font-weight: 400;
     color: var(--paragraph-text-color);
     line-height: 26px;
+}
+
+.nav_link>a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.active_link>a {
+    color: var(--secondary-text-color);
 }
