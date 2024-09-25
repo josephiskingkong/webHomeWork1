@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --main-text-color: #495367;
+    --secondary-text-color: #8A53FF;
+    --description-text-color: #576074;
+    --paragraph-text-color: #434343;
+}
+
+.nav_section {
+    height: 70px;
+    padding-inline: 90px;
+    align-content: center;
+    box-shadow: 0 4px 16px #0001;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+}
+
+.nav_elements,
+.nav_links,
+.nav_menu_section,
+.footer_links {
+    display: flex;
+    align-items: center;
+}
+
+.nav_menu_section {
+    gap: 18px;
+}
+
+.nav_elements {
+    justify-content: space-between;
+}
+
+.nav_links {
+    gap: 40px;
+    list-style: none;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--main-text-color);
+}
+
+.nav_link>a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.active_link>a {
+    color: var(--secondary-text-color);
+}
+
+.nav_menu_button {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav_menu_button>img {
+    width: 18px;
+    height: 18px;
+}
+
+.footer_section {
+    height: 80px;
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_links {
+    gap: 40px;
+    list-style: none;
+    font-weight: 300;
+    font-size: 14px;
+    color: #939EB4;
+}
+
+.footer_link>a {
+    text-decoration: none;
+    color: #939EB4;
+}
+
+.rights_reserved {
+    font-weight: 300;
+    color: #939EB4;
+    font-size: 14px;
+}
+
+.share_container {
+    background: url(../img/share_background.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.share_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.share_content_wrapper {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 600px;
+}
+
+.share_content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.share_content_title {
+    color: var(--main-text-color);
+    font-family: "Changa One", sans-serif;
+    font-size: 24px;
+}
+
+.share_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.share_content_description {
+    color: var(--description-text-color);
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.share_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.share_input {
+    height: 60px;
+    outline: none;
+    border: 1px solid #0001;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    color: #999;
+}
+
+.share_input::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    transform: scaleY(50%);
+}
+
+.share_input:not(textarea)::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -3px;
+    width: 12px;
+    height: 7px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="7"><path fill="%23999" d="M6 7L0 0h12z"/></svg>');
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.share_input select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 40px;
+}
+
+.share_input select option[disabled][selected] {
+    display: none;
+}
+
+.share_input textarea {
+    padding-top: 15px;
+    resize: none;
+}
+
+.share_submit {
+    color: #fff;
+    background: var(--secondary-text-color);
+    padding: 15px 100px;
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 4px;
+    width: max-content;
+    cursor: pointer;
+}
+
+.discover_texts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+.discover_category {
+    color: var(--secondary-text-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.discover_title {
+    color: var(--main-text-color);
+    font-size: 36px;
+    font-family: "Changa One", sans-serif;
+}

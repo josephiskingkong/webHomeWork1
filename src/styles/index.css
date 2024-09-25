@@ -1,0 +1,257 @@
+/* Hero section */
+.hero_container {
+    background: url(../img/background.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.hero_content_wrapper {
+    width: 100%;
+    background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0) 78%);
+}
+.hero_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 200px 300px;
+}
+.hero_title {
+    font-size: 56px;
+    font-family: "Changa One", sans-serif;
+}
+.hero_texts {
+    width: 396px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 400;
+    color: var(--main-text-color);
+    margin-bottom: 25px;
+}
+.hero_main_button {
+    font-size: 12px;
+    background: var(--secondary-text-color);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.hero_buttons {
+    display: flex;
+    gap: 20px;
+}
+.hero_play_button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--main-text-color);
+    font-size: 12px;
+    height: 35px;
+    cursor: pointer;
+}
+.hero_play_button_icon {
+    padding: 10px;
+    border-radius: 50%;
+    background: #8953ff12;
+}
+.hero_play_button_icon > img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Featured Destination */
+.featured_destination_container {
+    padding: 100px 300px;
+}
+.featured_destination_wrapper {
+    display: flex;
+}
+.featured_img_container {
+    margin-right: 40px;
+}
+.featured_content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+}
+.featured_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 500px;
+    margin-bottom: 24px;
+}
+.featured_category {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 18px;
+}
+.featured_title {
+    font-family: "Changa One", sans-serif;
+    font-size: 36px;
+    color: var(--main-text-color);
+}
+.featured_description {
+    color: var(--main-text-color);
+    line-height: 33px;
+    font-size: 18px;
+}
+.featured_button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--secondary-text-color);
+    font-weight: 300;
+    cursor: pointer;
+}
+.featured_play_button_icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-text-color);
+    border-radius: 50%;
+}
+.featured_play_button_icon > img {
+    filter: brightness(0) invert(1);;
+    width: 16px;
+    height: 16px;
+}
+
+/* Discover locations */
+.discover_container {
+    padding: 50px 300px;
+}
+.discover_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.discover_content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+}
+.locations_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+.location_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.location_card_img_container > img {
+    width: 240px;
+}
+.location_card_title {
+    color: var(--main-text-color);
+    font-family: "Changa One", sans-serif;
+    font-size: 24px;
+}
+.location_card_button {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* Recent Stories */
+.recent_container {
+    padding: 100px 300px;
+}
+.recent_wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+}
+.recent_main_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.recent_main_card {
+    display: flex;
+    flex-direction: column;
+}
+.recent_main_card_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #F9F9F9;
+    border-radius: 0 0 8px 8px;
+}
+.recent_main_card_texts {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2px;
+    width: 430px;
+}
+.recent_main_card_title {
+    font-size: 24px;
+    color: var(--main-text-color);
+    font-family: "Changa One", sans-serif;
+}
+.recent_main_card_description {
+    color: var(--description-text-color);
+    font-size: 16px;
+    line-height: 26px;
+}
+.recent_play_button_icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-text-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.recent_play_button_icon > img {
+    filter: brightness(0) invert(1);;
+    width: 22px;
+    height: 22px;
+}
+.recent_content_grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    align-items: baseline;
+}
+.recent_story_card {
+    background: #F9F9F9;
+    border-radius: 8px;
+    padding: 8px;
+}
+.recent_story_card_content {
+    display: flex;
+    gap: 10px;
+}
+.recent_story_card_img {
+    height: 100%;
+}
+.recent_story_card_texts {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+.recent_story_card_title {
+    font-size: 24px;
+    color: var(--main-text-color);
+    font-family: "Changa One", sans-serif;
+}
+.recent_story_card_description {
+    color: var(--description-text-color);
+    font-size: 15px;
+    line-height: 26px;
+}
